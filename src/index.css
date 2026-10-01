@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-burgundy: #240D18;
+  --color-plum: #3A1425;
+  --color-wine: #651F3B;
+  --color-rose: #9D315C;
+  --color-pink: #E875A0;
+  --color-softpink: #F2A9C2;
+  --color-blush: #F8DCE8;
+  --color-cream: #FFF8FA;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #240D18;
+    color: #FFF8FA;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #240D18;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #651F3B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9D315C;
+  }
+}
+
+/* Subtle editorial text styles */
+.font-display {
+  font-family: var(--font-serif);
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+/* Subtle background grain simulation */
+.bg-grain {
+  background-image: radial-gradient(rgba(242, 169, 194, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glass & Glow utilities tailored to palette */
+.luminescent-border {
+  border: 1px solid rgba(242, 169, 194, 0.15);
+}
+
+.luminescent-border-hover:hover {
+  border-color: rgba(232, 117, 160, 0.4);
+}
