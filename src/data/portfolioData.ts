@@ -2,6 +2,26 @@ import lumiereParis from '../assets/images/lumiere_paris_1790880929872.jpg';
 import medimateAI from '../assets/images/medimate_ai_1790880946713.jpg';
 import futureExperiment from '../assets/images/future_experiment_1790880962498.jpg';
 
+import music01 from '../assets/images/hobbies/music/01.jpg';
+import music02 from '../assets/images/hobbies/music/02.jpg';
+import music03 from '../assets/images/hobbies/music/03.jpg';
+
+import travel01 from '../assets/images/hobbies/travel/01.jpg';
+import travel02 from '../assets/images/hobbies/travel/02.jpg';
+import travel03 from '../assets/images/hobbies/travel/03.jpg';
+
+import photography01 from '../assets/images/hobbies/photography/01.jpg';
+import photography02 from '../assets/images/hobbies/photography/02.jpg';
+import photography03 from '../assets/images/hobbies/photography/03.jpg';
+
+import design01 from '../assets/images/hobbies/design/01.jpg';
+import design02 from '../assets/images/hobbies/design/02.jpg';
+import design03 from '../assets/images/hobbies/design/03.jpg';
+
+import coffee01 from '../assets/images/hobbies/coffee/01.jpg';
+import coffee02 from '../assets/images/hobbies/coffee/02.jpg';
+import coffee03 from '../assets/images/hobbies/coffee/03.jpg';
+
 export interface Project {
   id: string;
   number: string;
@@ -317,15 +337,15 @@ export const PORTFOLIO_DATA = {
       accentColor: '#E875A0',
       images: [
         {
-          src: '/src/assets/images/hobbies/music/01.jpg',
+          src: music01,
           alt: 'Vintage vinyl records and warm amplifier',
         },
         {
-          src: '/src/assets/images/hobbies/music/02.jpg',
+          src: music02,
           alt: 'Acoustic guitar in studio',
         },
         {
-          src: '/src/assets/images/hobbies/music/03.jpg',
+          src: music03,
           alt: 'Upright piano keys and sheet music',
         },
       ],
@@ -339,15 +359,15 @@ export const PORTFOLIO_DATA = {
       accentColor: '#F2A9C2',
       images: [
         {
-          src: '/src/assets/images/hobbies/travel/01.jpg',
+          src: travel01,
           alt: 'Historic city architecture in soft dawn light',
         },
         {
-          src: '/src/assets/images/hobbies/travel/02.jpg',
+          src: travel02,
           alt: 'Cozy cobblestone street with warm evening lanterns',
         },
         {
-          src: '/src/assets/images/hobbies/travel/03.jpg',
+          src: travel03,
           alt: 'Scenic mountain trail overlooking a serene alpine lake',
         },
       ],
@@ -361,15 +381,15 @@ export const PORTFOLIO_DATA = {
       accentColor: '#9D315C',
       images: [
         {
-          src: '/src/assets/images/hobbies/photography/01.jpg',
+          src: photography01,
           alt: 'Vintage 35mm rangefinder camera on wooden table',
         },
         {
-          src: '/src/assets/images/hobbies/photography/02.jpg',
+          src: photography02,
           alt: 'Clean architectural shadows and modern brick facade',
         },
         {
-          src: '/src/assets/images/hobbies/photography/03.jpg',
+          src: photography03,
           alt: 'Fresh botanical wildflower in soft natural morning light',
         },
       ],
@@ -383,15 +403,15 @@ export const PORTFOLIO_DATA = {
       accentColor: '#E875A0',
       images: [
         {
-          src: '/src/assets/images/hobbies/design/01.jpg',
+          src: design01,
           alt: 'Art and design books stacked on travertine table',
         },
         {
-          src: '/src/assets/images/hobbies/design/02.jpg',
+          src: design02,
           alt: 'Architect workspace with drafting sketches and pencil',
         },
         {
-          src: '/src/assets/images/hobbies/design/03.jpg',
+          src: design03,
           alt: 'Handcrafted ceramic vase and textured linen in sunlit studio',
         },
       ],
@@ -405,15 +425,15 @@ export const PORTFOLIO_DATA = {
       accentColor: '#F2A9C2',
       images: [
         {
-          src: '/src/assets/images/hobbies/coffee/01.jpg',
+          src: coffee01,
           alt: 'Artisanal morning pour-over coffee ritual',
         },
         {
-          src: '/src/assets/images/hobbies/coffee/02.jpg',
+          src: coffee02,
           alt: 'Steaming ceramic coffee mug beside an open notebook',
         },
         {
-          src: '/src/assets/images/hobbies/coffee/03.jpg',
+          src: coffee03,
           alt: 'Roasted whole coffee beans resting in ceramic bowl',
         },
       ],
