@@ -1,3 +1,7 @@
+import lumiereParis from '../assets/images/lumiere_paris_1790880929872.jpg';
+import medimateAI from '../assets/images/medimate_ai_1790880946713.jpg';
+import futureExperiment from '../assets/images/future_experiment_1790880962498.jpg';
+
 export interface Project {
   id: string;
   number: string;
@@ -87,8 +91,7 @@ export const PORTFOLIO_DATA = {
       year: '2026',
       category: 'Web Experience / Frontend',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Motion'],
-      image: '/src/assets/images/lumiere_paris_1790880929872.jpg',
-      accentColor: '#E875A0',
+      image: lumiereParis,
       features: [
         'Responsive layout designed for desktop, tablet, and mobile screens',
         'Interactive chapter navigation with subtle scroll-linked visual changes',
@@ -109,7 +112,7 @@ export const PORTFOLIO_DATA = {
       year: '2025',
       category: 'AI Application / Product Design',
       technologies: ['Python', 'FastAPI', 'React', 'TypeScript', 'LLM APIs'],
-      image: '/src/assets/images/medimate_ai_1790880946713.jpg',
+      image: medimateAI,
       accentColor: '#F2A9C2',
       features: [
         'Clean conversational interface with readable step-by-step guidance',
@@ -131,7 +134,7 @@ export const PORTFOLIO_DATA = {
       year: '2026',
       category: 'Creative Development / Canvas',
       technologies: ['TypeScript', 'HTML5 Canvas', 'Mathematics', 'Vite'],
-      image: '/src/assets/images/future_experiment_1790880962498.jpg',
+      image: futureExperiment,
       accentColor: '#9D315C',
       features: [
         'Lightweight 60 FPS parametric petal math without heavy 3D engine overhead',
