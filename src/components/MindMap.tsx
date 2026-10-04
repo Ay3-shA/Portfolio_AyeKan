@@ -28,7 +28,7 @@ export const MindMap: React.FC = () => {
         <span>Skills & Areas of Focus</span>
       </div>
 
-      <div className="mb-12 max-w-3xl">
+      <div className="w-full max-w-none">
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FFF8FA] tracking-tight">
           How I Think & Build
         </h2>

@@ -16,12 +16,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenContact }) => {
 
       {/* Main Closing Section */}
       <div className="text-center max-w-3xl mx-auto mb-24">
-        <div className="mb-3">
-          <span className="text-xs tracking-[0.4em] uppercase text-[#E875A0] font-medium block">
-            {profile.brand}
-          </span>
-        </div>
-
+        
         <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-light text-[#FFF8FA] tracking-tight leading-tight mb-4">
           Let's build something.
         </h2>

@@ -14,7 +14,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Skills', href: '#mind', id: 'mind' },
     { label: 'Work', href: '#work', id: 'work' },
-    { label: 'Lab', href: '#lab', id: 'lab' },
+    
     { label: 'Journey', href: '#journey', id: 'journey' },
     { label: 'Outside', href: '#outside', id: 'outside' },
     { label: 'Values', href: '#philosophy', id: 'philosophy' },
@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
 
-      const sections = ['about', 'mind', 'work', 'lab', 'journey', 'outside', 'philosophy', 'contact'];
+      const sections = ['about', 'mind', 'work', 'journey', 'outside', 'philosophy', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {

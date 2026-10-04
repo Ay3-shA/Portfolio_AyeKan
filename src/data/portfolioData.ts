@@ -1,3 +1,5 @@
+import ayeshaPortrait from '../assets/images/ayesha_portrait_1790880976619.jpg';
+
 import lumiereParis from '../assets/images/lumiere_paris_1790880929872.jpg';
 import medimateAI from '../assets/images/medimate_ai_1790880946713.jpg';
 import futureExperiment from '../assets/images/future_experiment_1790880962498.jpg';
@@ -51,15 +53,6 @@ export interface MindNode {
   tools: string[];
 }
 
-export interface LabExperiment {
-  id: string;
-  title: string;
-  category: 'AI experiments' | 'UI experiments' | 'Creative coding' | 'Interaction experiments';
-  year: string;
-  status: string;
-  summary: string;
-}
-
 export interface JourneyStage {
   stage: 'LEARNING' | 'BUILDING' | 'EXPERIMENTING' | 'CREATING';
   period: string;
@@ -86,16 +79,14 @@ export interface HobbyStory {
 export const PORTFOLIO_DATA = {
   profile: {
     name: 'Ayesha Kanwal',
-    brand: 'AYEKAN',
+
     role: 'Software & AI Engineer',
-    heroTagline: 'I build software, AI systems, and digital experiences.',
-    aboutHeadline: 'I like building things that are useful, thoughtful, and well made.',
-    bio: 'I am a software engineer who works across modern web development, artificial intelligence, and interactive products. I enjoy the full journey of building — from understanding a user problem and designing an intuitive interface to structuring backend APIs and writing clean, reliable code.',
-    email: 'ayeshakanwal2715@gmail.com',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    location: 'Open to Opportunities',
-    year: '2026',
+    heroTagline: 'I’m interested in the space where human interaction meets artificial minds — where people don’t just use machines, but teach them, shape them, and interact with them.',
+    aboutHeadline: 'Building software with curiosity, purpose, and attention to detail.',
+    bio: 'I am a Computer Science graduate and software engineer with an interest in modern software development and artificial intelligence. I enjoy turning ideas into practical digital products and continuously learning through building.',
+    email: 'ayeshakanwal7838@gmail.com',
+    github: 'https://github.com/Ay3-shA',
+    linkedin: 'https://www.linkedin.com/in/ayeshaa-kanwal/',
   },
 
   projects: [
@@ -175,7 +166,7 @@ export const PORTFOLIO_DATA = {
       distance: 190,
       category: 'engineering',
       description: 'Designing clean architectures, writing maintainable code, and solving real-world engineering problems.',
-      tools: ['Architecture', 'Clean Code', 'Debugging', 'Git'],
+      tools: ['Python', 'React.js', 'Next.js', 'TypeScript', 'Node.js', 'Express.js', 'Clean Code', 'Debugging', 'Git'],
     },
     {
       id: 'ai-ml',
@@ -184,7 +175,7 @@ export const PORTFOLIO_DATA = {
       distance: 215,
       category: 'ai',
       description: 'Working with AI models, integrating LLM APIs, and building practical intelligent features into products.',
-      tools: ['LLMs', 'Prompt Design', 'RAG', 'Evaluation'],
+      tools: ['LLMs', 'Prompt Engineering', 'RAG', 'Evaluation', 'LangChain', 'Embeddings', 'Vector Databases'],
     },
     {
       id: 'frontend',
@@ -193,7 +184,7 @@ export const PORTFOLIO_DATA = {
       distance: 185,
       category: 'frontend',
       description: 'Crafting responsive, accessible, and fast user interfaces with modern React, TypeScript, and Tailwind CSS.',
-      tools: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      tools: ['Tailwind CSS', 'Vite','JavaScript','HTML5','CSS3','Bootstrap','Material UI','Responsive Design','REST API Integration'],
     },
     {
       id: 'backend',
@@ -202,7 +193,7 @@ export const PORTFOLIO_DATA = {
       distance: 210,
       category: 'backend',
       description: 'Building clean RESTful APIs, routing, and data handling with Python (FastAPI) and Node.js.',
-      tools: ['FastAPI', 'Node.js', 'REST APIs', 'Authentication'],
+      tools: ['MySQL', 'Node.js', 'REST APIs', 'Authentication','Server-side Logic', 'Data Validation'],
     },
     {
       id: 'python',
@@ -211,7 +202,7 @@ export const PORTFOLIO_DATA = {
       distance: 190,
       category: 'engineering',
       description: 'My primary programming language for AI workflows, data scripting, and backend API services.',
-      tools: ['PyTorch', 'NumPy', 'FastAPI', 'Automation'],
+      tools: ['PyTorch', 'NumPy', 'Pandas', 'Scripting', 'Jupyter','Automation','Data Processing','Scripting',],
     },
     {
       id: 'data',
@@ -220,7 +211,7 @@ export const PORTFOLIO_DATA = {
       distance: 215,
       category: 'core',
       description: 'Handling structured data, clean vector retrieval, and prompt optimization for reliable outputs.',
-      tools: ['Vector Stores', 'Data Pipelines', 'JSON Schemas'],
+      tools: ['RAG','LangChain','LLMs','Embeddings','Vector Databases','Vector Search','Semantic Search','Prompt Engineering','Data Pipelines'],
     },
     {
       id: 'web-tech',
@@ -229,7 +220,7 @@ export const PORTFOLIO_DATA = {
       distance: 180,
       category: 'frontend',
       description: 'Modern build tools, performance profiling, responsive CSS, and browser APIs.',
-      tools: ['HTML5 Canvas', 'Performance', 'Accessibility', 'Responsive Design'],
+      tools: ['HTML5','CSS3','JavaScript','Responsive Design','Accessibility','Browser APIs','Web Performance','Vite','Git','REST APIs'],
     },
     {
       id: 'ui-design',
@@ -238,45 +229,9 @@ export const PORTFOLIO_DATA = {
       distance: 210,
       category: 'frontend',
       description: 'Bridging solid engineering with thoughtful design so software is clear, intuitive, and enjoyable to use.',
-      tools: ['Prototyping', 'Typography', 'Hierarchy', 'User Flows'],
+      tools: ['Figma', 'Responsive Design', 'Hierarchy', 'User Flows'],
     },
   ] as MindNode[],
-
-  // Honest, developer-playground Lab experiments
-  labExperiments: [
-    {
-      id: 'lab-bloom',
-      title: 'Latent Bloom Synthesizer',
-      category: 'Creative coding',
-      year: '2026',
-      status: 'Interactive Sandbox',
-      summary: 'A real-time parametric flower and petal generator running on an HTML5 canvas with slider controls.',
-    },
-    {
-      id: 'lab-verse',
-      title: 'Semantic Text Search Explorer',
-      category: 'AI experiments',
-      year: '2025',
-      status: 'Prototype',
-      summary: 'Testing sentence embeddings and cosine similarity for faster topic discovery.',
-    },
-    {
-      id: 'lab-gaze',
-      title: 'Cursor Velocity & Focus',
-      category: 'UI experiments',
-      year: '2026',
-      status: 'Experiment',
-      summary: 'Measuring cursor movement speed to subtly adjust interaction feedback.',
-    },
-    {
-      id: 'lab-synapse',
-      title: 'Lightweight Canvas Particles',
-      category: 'Creative coding',
-      year: '2026',
-      status: 'Active Module',
-      summary: 'A fast, CPU-efficient background particle loop that pauses when out of view.',
-    },
-  ] as LabExperiment[],
 
   // Honest, safe conceptual Journey stages
   journeyStages: [
@@ -310,7 +265,7 @@ export const PORTFOLIO_DATA = {
       focusAreas: [
         'Integrating generative AI models into working web apps',
         'Retrieval-Augmented Generation (RAG) and prompt engineering',
-        'Creative coding and interactive canvas experiments in AYEKAN Lab',
+        
       ],
     },
     {

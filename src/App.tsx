@@ -6,7 +6,6 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { MindMap } from './components/MindMap';
 import { Projects } from './components/Projects';
-import { Lab } from './components/Lab';
 import { Journey } from './components/Journey';
 import { HumanSide } from './components/HumanSide';
 import { Philosophy } from './components/Philosophy';
@@ -60,10 +59,7 @@ export default function App() {
 
         {/* 4. Selected Work (Cinematic Exhibition Panels) */}
         <Projects />
-
-        {/* 5. AYEKAN / LAB (Notebook Research Space) */}
-        <Lab />
-
+        
         {/* 6. Journey (Conceptual Trajectory with Honest Placeholders) */}
         <Journey />
 

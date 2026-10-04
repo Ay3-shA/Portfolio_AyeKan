@@ -1,3 +1,4 @@
+import { NeuralBloom } from './NeuralBloom';
 import React, { useState } from 'react';
 import { Headphones, Compass, Camera, Palette, Coffee, ArrowUpRight } from 'lucide-react';
 import { PORTFOLIO_DATA, HobbyStory } from '../data/portfolioData';
@@ -91,6 +92,8 @@ export const HumanSide: React.FC = () => {
         hobby={selectedHobby}
         onClose={() => setSelectedHobby(null)}
       />
+
+      <NeuralBloom />
     </section>
   );
 };
