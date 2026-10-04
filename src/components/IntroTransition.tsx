@@ -14,12 +14,12 @@ export const IntroTransition: React.FC<IntroTransitionProps> = ({ onComplete }) 
       return;
     }
 
-    const timer1 = setTimeout(() => setStage('name'), 400);
-    const timer2 = setTimeout(() => setStage('fade'), 950);
+    const timer1 = setTimeout(() => setStage('name'), 1200);
+    const timer2 = setTimeout(() => setStage('fade'), 3400);
     const timer3 = setTimeout(() => {
       setStage('done');
       onComplete();
-    }, 1300);
+    }, 5000);
 
     return () => {
       clearTimeout(timer1);
