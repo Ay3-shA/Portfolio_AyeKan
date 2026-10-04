@@ -122,7 +122,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 required
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
-                placeholder="Ada Lovelace"
+                placeholder="Who’s Behind the Screen?"
                 className="w-full px-4 py-2.5 rounded-lg bg-[#240D18] border border-[#F2A9C2]/20 focus:border-[#E875A0] text-sm text-white placeholder-[#F8DCE8]/30 outline-none transition-colors"
               />
             </div>
@@ -136,7 +136,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 required
                 value={senderEmail}
                 onChange={(e) => setSenderEmail(e.target.value)}
-                placeholder="ada@domain.com"
+                placeholder="yourdigitaladdress@gmail.com"
                 className="w-full px-4 py-2.5 rounded-lg bg-[#240D18] border border-[#F2A9C2]/20 focus:border-[#E875A0] text-sm text-white placeholder-[#F8DCE8]/30 outline-none transition-colors"
               />
             </div>
@@ -156,10 +156,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
             />
           </div>
 
-          <div className="pt-2 flex items-center justify-between">
-            <span className="text-xs text-[#F2A9C2]/60 font-light">
-              Opens in your default email client
-            </span>
+          <div className="pt-2 flex items-center justify-end">
 
             <button
               type="submit"
