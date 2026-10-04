@@ -11,7 +11,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onOpenContact }) => {
   const { profile } = PORTFOLIO_DATA;
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-between pt-28 pb-12 px-6 md:px-12 w-full z-10 select-none">
+    <section id="home" className="relative min-h-screen flex flex-col justify-between pt-28 pb-12 px-6 md:px-12 w-full z-10 select-none">
       {/* Main Dramatic Typographic Display */}
       <div className="pt-4 md:pt-8 relative">
         {/* Subtle glowing ambient bloom behind typography */}

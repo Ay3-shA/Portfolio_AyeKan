@@ -59,7 +59,7 @@ export default function App() {
 
         {/* 4. Selected Work (Cinematic Exhibition Panels) */}
         <Projects />
-        
+
         {/* 6. Journey (Conceptual Trajectory with Honest Placeholders) */}
         <Journey />
 

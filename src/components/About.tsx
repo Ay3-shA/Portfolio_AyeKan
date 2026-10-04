@@ -17,9 +17,9 @@ export const About: React.FC = () => {
     <section id="about" className="relative py-28 md:py-36 px-6 md:px-12 w-full z-10">
       {/* Chapter Index */}
       <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span>01</span>
         <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-        <span>About / Background</span>
+        <span>About</span>
+        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
       </div>
       
       {/* Primary Narrative */}

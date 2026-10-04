@@ -11,10 +11,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   const [activeSection, setActiveSection] = useState('about');
 
   const navLinks = [
+    { label: 'Home', href: '#home', id: 'home' },
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Skills', href: '#mind', id: 'mind' },
     { label: 'Work', href: '#work', id: 'work' },
-    
     { label: 'Journey', href: '#journey', id: 'journey' },
     { label: 'Outside', href: '#outside', id: 'outside' },
     { label: 'Values', href: '#philosophy', id: 'philosophy' },
@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
 
-      const sections = ['about', 'mind', 'work', 'journey', 'outside', 'philosophy', 'contact'];
+      const sections = ['home','about', 'mind', 'work', 'journey', 'outside', 'philosophy', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               >
                 <span>{link.label}</span>
                 {isActive && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#E875A0] shadow-[0_0_8px_#E875A0] transition-all" />
+                  <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#E875A0] shadow-[0_0_8px_#E875A0] transition-all" />
                 )}
               </a>
             );

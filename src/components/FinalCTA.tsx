@@ -43,8 +43,6 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenContact }) => {
         <div className="flex items-center gap-3 tracking-[0.15em] uppercase">
           <span className="font-display text-lg text-white font-normal tracking-[0.2em]">AYEKAN</span>
           <span className="text-[#E875A0]" aria-hidden="true">·</span>
-          <span>Ayesha Kanwal</span>
-          <span className="text-[#E875A0]" aria-hidden="true">·</span>
           <span className="text-[#F2A9C2]/80">Software & AI Engineer</span>
         </div>
 

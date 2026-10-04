@@ -32,9 +32,9 @@ export const HumanSide: React.FC = () => {
     >
       {/* Chapter Index */}
       <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span>06</span>
         <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-        <span>Outside the Code</span>
+        <span>Outside</span>
+        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
       </div>
 
       {/* Clean, Simple Section Header */}

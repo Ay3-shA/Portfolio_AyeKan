@@ -7,16 +7,14 @@ export const Philosophy: React.FC = () => {
   return (
     <section
       id="philosophy"
-      className="relative py-36 md:py-48 px-6 md:px-12 bg-[#240D18] z-10 border-t border-[#E875A0]/20"
+      className="relative py-36 md:py-48 px-6 md:px-12 z-10"
     >
       <div className="max-w-4xl mx-auto">
         {/* Chapter Index */}
         <div className="flex items-center justify-center gap-3 text-xs tracking-[0.35em] uppercase text-[#E875A0] mb-14 font-medium">
-          <span>07</span>
           <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-          <span>Perspective & Values</span>
+          <span>Values</span>
           <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-          <span>07</span>
         </div>
 
         {/* Primary Statement */}
@@ -37,6 +35,7 @@ export const Philosophy: React.FC = () => {
         </div>
 
         {/* 3 Grounded Principles */}
+
         <div className="max-w-3xl mx-auto space-y-12 border-t border-[#F2A9C2]/15 pt-12">
           {philosophy.principles.map((pillar, idx) => (
             <div

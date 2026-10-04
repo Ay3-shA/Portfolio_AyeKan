@@ -8,9 +8,10 @@ export const Journey: React.FC = () => {
     <section id="journey" className="relative py-28 md:py-36 px-6 md:px-12 max-w-7xl mx-auto z-10">
       {/* Chapter Index */}
       <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span>05</span>
+        
         <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-        <span>Journey / Evolution</span>
+        <span>Journey</span>
+        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
       </div>
 
       <div className="max-w-3xl mb-16">

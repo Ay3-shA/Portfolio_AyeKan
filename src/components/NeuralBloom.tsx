@@ -307,16 +307,7 @@ export const NeuralBloom: React.FC = () => {
       {/* =========================
           CHAPTER HEADER
       ========================== */}
-
-      <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span>04</span>
-
-        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
-
-        <span>
-          04 / AYEKAN / FOR FUN · Interactive
-        </span>
-      </div>
+      
 
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-8 border-b border-[#F2A9C2]/15 gap-6">
         <div>
