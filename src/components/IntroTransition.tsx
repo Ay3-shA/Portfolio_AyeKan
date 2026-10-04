@@ -50,10 +50,10 @@ export const IntroTransition: React.FC<IntroTransitionProps> = ({ onComplete }) 
         </div>
 
         <div
-          className={`transition-all duration-400 transform ${
-            stage === 'name' || stage === 'fade'
-              ? 'opacity-100 scale-100'
-              : 'opacity-0 translate-y-3 scale-95 hidden'
+          className={`transition-opacity duration-400 ${
+            stage === 'brand'
+              ? 'opacity-100'
+              : 'opacity-0 hidden'
           }`}
         >
           <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-light text-[#FFF8FA] tracking-tight">
