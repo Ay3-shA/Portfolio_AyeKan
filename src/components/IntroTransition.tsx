@@ -44,7 +44,7 @@ export const IntroTransition: React.FC<IntroTransitionProps> = ({ onComplete }) 
               : 'opacity-0 -translate-y-3 scale-95 hidden'
           }`}
         >
-          <span className="font-display text-4xl sm:text-5xl md:text-6xl tracking-[0.3em] font-light text-[#FFF8FA]">
+          <span className="font-display text-4xl sm:text-5xl md:text-6xl tracking-[0.24em] font-light text-[#FFF8FA]">
             AYEKAN
           </span>
         </div>
