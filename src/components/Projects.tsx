@@ -12,19 +12,19 @@ export const Projects: React.FC = () => {
       {/* Chapter Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 md:mb-28 pb-8 border-b border-[#F2A9C2]/15 gap-6">
         <div>
-          <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-3 font-medium">
-          
-            <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+          <div className="flex items-center gap-4 text-lg tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
+            <span className="w-12 h-[2px] bg-[#E875A0]/50" />
             <span>WORK</span>
-            <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+            <span className="w-12 h-[2px] bg-[#E875A0]/50" />
           </div>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FFF8FA] tracking-tight">
             Featured Projects
           </h2>
+          <p className="mt-3 text-base sm:text-lg text-[#F8DCE8]/75 font-light leading-relaxed">
+            A selection of projects exploring web development, conversational AI, and interactive frontend interfaces.
+          </p>
         </div>
-        <p className="max-w-md text-sm text-[#F8DCE8]/75 font-light leading-relaxed">
-          A selection of projects exploring web development, conversational AI, and interactive frontend interfaces.
-        </p>
+        
       </div>
 
       {/* Cinematic Showcase Panels */}

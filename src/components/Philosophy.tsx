@@ -11,10 +11,10 @@ export const Philosophy: React.FC = () => {
     >
       <div className="max-w-4xl mx-auto">
         {/* Chapter Index */}
-        <div className="flex items-center justify-center gap-3 text-xs tracking-[0.35em] uppercase text-[#E875A0] mb-14 font-medium">
-          <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+        <div className="flex items-center gap-4 text-lg tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
+        <span className="w-12 h-[2px] bg-[#E875A0]/50" />
           <span>Values</span>
-          <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+          <span className="w-12 h-[2px] bg-[#E875A0]/50" />
         </div>
 
         {/* Primary Statement */}

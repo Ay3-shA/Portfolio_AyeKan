@@ -22,17 +22,17 @@ export const MindMap: React.FC = () => {
   return (
     <section id="mind" className="relative py-28 md:py-36 px-6 md:px-12 max-w-7xl mx-auto z-10">
       {/* Chapter Index */}
-      <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+      <div className="flex items-center gap-4 text-lg tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
+        <span className="w-12 h-[2px] bg-[#E875A0]/50" />
         <span>Skills</span>
-        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+        <span className="w-12 h-[2px] bg-[#E875A0]/50" />
       </div>
 
       <div className="w-full max-w-none">
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FFF8FA] tracking-tight">
           How I Think & Build
         </h2>
-        <p className="mt-3 text-sm sm:text-base text-[#F8DCE8]/75 font-light leading-relaxed">
+        <p className="mt-3 text-base sm:text-lg text-[#F8DCE8]/75 font-light leading-relaxed">
           I work across software engineering, artificial intelligence, and frontend design. Select any area to see the tools and practices I use.
         </p>
       </div>
@@ -119,14 +119,15 @@ export const MindMap: React.FC = () => {
               <circle
                 cx={cx}
                 cy={cy}
-                r={hoveredNodeId || activeNode ? 68 : 58}
+                r={hoveredNodeId || activeNode ? 78 : 66}
                 fill="url(#mindCenterGlow)"
                 className="transition-all duration-500 animate-pulse"
               />
+
               <circle
                 cx={cx}
                 cy={cy}
-                r={44}
+                r={50}
                 fill="#240D18"
                 stroke={hoveredNodeId ? '#FFF8FA' : '#E875A0'}
                 strokeWidth={1.5}
@@ -204,7 +205,7 @@ export const MindMap: React.FC = () => {
           <div className="border border-[#E875A0]/25 bg-[#3A1425]/30 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden transition-all duration-500">
             <div className="flex items-center justify-between text-xs tracking-[0.25em] uppercase text-[#E875A0] font-medium mb-3">
               <span>Engineering Area</span>
-              <span className="font-mono text-[10px] text-[#F2A9C2]/60">{currentNode.category.toUpperCase()}</span>
+              <span className="font-mono text-xs text-[#F2A9C2]/60">{currentNode.category.toUpperCase()}</span>
             </div>
 
             <h3 className="font-display text-3xl sm:text-4xl text-[#FFF8FA] font-light mb-4">
@@ -217,10 +218,10 @@ export const MindMap: React.FC = () => {
 
             {/* Unboxed Tools & Technologies */}
             <div className="pt-4 border-t border-[#F2A9C2]/15">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-[#E875A0]/90 block mb-2 font-medium">
+              <span className="text-xs tracking-[0.2em] uppercase text-[#E875A0]/90 block mb-2 font-medium">
                 Tools & Technologies
               </span>
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#FFF8FA]/90 font-light">
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[#FFF8FA]/90 font-light">
                 {currentNode.tools.map((tool, i) => (
                   <React.Fragment key={tool}>
                     <span>{tool}</span>

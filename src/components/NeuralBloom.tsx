@@ -662,21 +662,7 @@ export const NeuralBloom: React.FC = () => {
 
         </div>
       </div>
-
-      {/* =========================
-          SMALL FOOTER NOTE
-      ========================== */}
-
-      <div className="mt-8 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-[#F2A9C2]/40">
-        <span>
-          Pattern spotting · Visual intuition
-        </span>
-
-        <span>
-          Neural Bloom / 04
-        </span>
-      </div>
-
+      
     </section>
   );
 };

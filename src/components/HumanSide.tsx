@@ -31,10 +31,10 @@ export const HumanSide: React.FC = () => {
       className="relative py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto z-10"
     >
       {/* Chapter Index */}
-      <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
-        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+      <div className="flex items-center gap-4 text-lg tracking-[0.3em] uppercase text-[#E875A0] mb-8 font-medium">
+        <span className="w-12 h-[2px] bg-[#E875A0]/50" />
         <span>Outside</span>
-        <span className="w-8 h-[1px] bg-[#E875A0]/40" />
+        <span className="w-12 h-[2px] bg-[#E875A0]/50" />
       </div>
 
       {/* Clean, Simple Section Header */}
