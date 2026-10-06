@@ -35,7 +35,7 @@ export const Journey: React.FC = () => {
               {/* Stage Block */}
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-xs tracking-[0.2em] uppercase font-medium">
-                  <span className="text-[#E875A0] font-mono">{stage.stage}</span>
+                  <span className="text-[#E875A0] font-mono text-xl">{stage.stage}</span>
                   <span className="text-[#F2A9C2]/40" aria-hidden="true">·</span>
                   <span className="text-[#F2A9C2]/70 font-light">{stage.period}</span>
                 </div>

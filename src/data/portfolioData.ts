@@ -319,7 +319,7 @@ export const PORTFOLIO_DATA = {
       id: 'music',
       index: '01',
       title: 'Music',
-      oneLiner: 'I always have something playing in the background — from quiet evenings to long coding sessions.',
+      oneLiner: 'I always have something playing in the background.',
       note: "Music is usually somewhere in the background when I'm working. It helps me focus, slow down, or sometimes just make a long coding session more enjoyable.",
       accentColor: '#E875A0',
       images: [

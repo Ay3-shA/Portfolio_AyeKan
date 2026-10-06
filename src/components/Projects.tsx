@@ -92,7 +92,7 @@ export const Projects: React.FC = () => {
                       <h3 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-[#FFF8FA] leading-tight group-hover:text-[#F8DCE8] transition-colors">
                         {project.title}
                       </h3>
-                      <p className="mt-2 font-display text-lg italic text-[#F2A9C2] font-light">
+                      <p className="mt-2 font-display text-2xl italic text-[#F2A9C2] font-light">
                         {project.subtitle}
                       </p>
                     </div>
@@ -103,7 +103,7 @@ export const Projects: React.FC = () => {
 
                     {/* Realistic Technologies */}
                     <div className="pt-2">
-                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#F2A9C2]/90 font-light">
+                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[#F2A9C2]/90 font-light">
                         {project.technologies.map((tech, i) => (
                           <React.Fragment key={tech}>
                             <span className="hover:text-white transition-colors">{tech}</span>
@@ -132,16 +132,6 @@ export const Projects: React.FC = () => {
                 </div>
               </article>
 
-              {/* Project Transition */}
-              {idx < projects.length - 1 && (
-                <div className="py-8 my-4 flex items-center justify-center gap-4 text-xs tracking-[0.3em] uppercase text-[#F2A9C2]/40 select-none">
-                  <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-[#E875A0]/25 to-transparent" />
-                  <span className="font-mono text-[10px]">
-                    PROJECT 0{idx + 1} ➔ 0{idx + 2}
-                  </span>
-                  <span className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-[#E875A0]/25 to-transparent" />
-                </div>
-              )}
             </React.Fragment>
           );
         })}

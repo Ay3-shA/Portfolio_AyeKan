@@ -38,14 +38,14 @@ export const HumanSide: React.FC = () => {
       </div>
 
       {/* Clean, Simple Section Header */}
-      <div className="max-w-3xl mb-14 md:mb-16">
+      <div className="w-full mb-14 md:mb-16">
         <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FFF8FA] tracking-tight">
           Outside the Code
         </h2>
-        <p className="mt-3 text-base text-[#F2A9C2] font-display italic">
+        <p className="mt-3 text-2xl text-[#F2A9C2] font-display italic">
           "Things I enjoy when I'm not building software."
         </p>
-        <p className="mt-2 text-sm text-[#F8DCE8]/75 font-light leading-relaxed">
+        <p className="mt-2 text-base text-[#F8DCE8]/75 font-light leading-relaxed">
           Because there is more to any person than their terminal. Click on an interest to view a short note and photographs.
         </p>
       </div>
@@ -58,14 +58,11 @@ export const HumanSide: React.FC = () => {
             onClick={() => setSelectedHobby(hobby)}
             className="group relative p-6 rounded-2xl bg-[#3A1425]/30 hover:bg-[#3A1425]/60 border border-[#F2A9C2]/15 hover:border-[#E875A0]/50 text-left transition-all duration-300 flex flex-col justify-between h-48 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E875A0]"
           >
-            {/* Top row: Icon & Number */}
+            {/* Top row: Icon */}
             <div className="flex items-center justify-between w-full">
               <div className="p-2.5 rounded-xl bg-[#240D18]/80 border border-white/5 group-hover:scale-105 transition-transform">
                 {getHobbyIcon(hobby.id)}
               </div>
-              <span className="font-mono text-xs text-[#F2A9C2]/50">
-                0{idx + 1}
-              </span>
             </div>
 
             {/* Middle: Title & One-Liner */}
@@ -73,15 +70,18 @@ export const HumanSide: React.FC = () => {
               <h3 className="font-display text-2xl text-white font-normal group-hover:text-[#F8DCE8] transition-colors">
                 {hobby.title}
               </h3>
-              <p className="text-xs text-[#F8DCE8]/70 font-light mt-1.5 line-clamp-2 leading-relaxed">
+              <p className="text-sm text-[#F8DCE8]/70 font-light mt-1.5 line-clamp-2 leading-relaxed">
                 {hobby.oneLiner}
               </p>
             </div>
 
             {/* Bottom: Subtle "View Photos" prompt */}
-            <div className="flex items-center justify-between pt-3 border-t border-white/5 text-[11px] tracking-wider uppercase text-[#E875A0] font-medium">
-              <span>View Photos & Note</span>
-              <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <div className="relative pt-3 text-[11px] tracking-wider uppercase text-[#E875A0] font-medium">
+              <div className="absolute left-0 right-0 top-1 border-t border-white/5" />
+              <div className="flex items-center justify-between">
+                <span>View Photos & Note</span>
+                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </div>
             </div>
           </button>
         ))}

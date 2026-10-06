@@ -383,7 +383,7 @@ export const NeuralBloom: React.FC = () => {
             {/* Petals */}
 
             <div>
-              <div className="flex justify-between text-xs text-[#F8DCE8] mb-1 font-light">
+              <div className="flex justify-between text-sm text-[#F8DCE8] mb-1 font-light">
                 <span>Petal Count</span>
 
                 <span className="font-mono text-[#E875A0]">
@@ -408,7 +408,7 @@ export const NeuralBloom: React.FC = () => {
             {/* Resonance */}
 
             <div>
-              <div className="flex justify-between text-xs text-[#F8DCE8] mb-1 font-light">
+              <div className="flex justify-between text-sm text-[#F8DCE8] mb-1 font-light">
                 <span>Resonance</span>
 
                 <span className="font-mono text-[#E875A0]">
@@ -433,7 +433,7 @@ export const NeuralBloom: React.FC = () => {
             {/* Dispersion */}
 
             <div>
-              <div className="flex justify-between text-xs text-[#F8DCE8] mb-1 font-light">
+              <div className="flex justify-between text-sm text-[#F8DCE8] mb-1 font-light">
                 <span>Dispersion</span>
 
                 <span className="font-mono text-[#E875A0]">
@@ -471,7 +471,7 @@ export const NeuralBloom: React.FC = () => {
         <div className="flex items-center justify-between pb-4 border-b border-[#F2A9C2]/15">
 
             <div>
-                <div className="flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-[#E875A0] font-medium">
+                <div className="flex items-center gap-2 text-sm tracking-[0.2em] uppercase text-[#E875A0] font-medium">
                     <Terminal className="w-3.5 h-3.5" />
 
                     <span>
@@ -486,7 +486,7 @@ export const NeuralBloom: React.FC = () => {
 
                 <button
                 onClick={startChallenge}
-                className="px-4 py-2 rounded-lg border border-[#E875A0]/20 text-xs text-[#F8DCE8]/80 hover:bg-[#E875A0]/10 hover:border-[#E875A0]/40 transition-all"
+                className="px-4 py-2 rounded-lg border border-[#E875A0]/20 text-sm text-[#F8DCE8]/80 hover:bg-[#E875A0]/10 hover:border-[#E875A0]/40 transition-all"
                 >
                 New Challenge
                 </button>
@@ -512,13 +512,13 @@ export const NeuralBloom: React.FC = () => {
             <div className="rounded-2xl border border-[#F2A9C2]/10 bg-[#240D18]/40 p-4">
 
                 <div className="flex items-center justify-center gap-3 mb-4">
-                <span className="text-[9px] uppercase tracking-[0.25em] text-[#F2A9C2]/40">
+                <span className="text-[12px] uppercase tracking-[0.25em] text-[#F2A9C2]/40">
                     Spot The Difference
                 </span>
 
                 <span className="w-8 h-px bg-[#E875A0]/20" />
 
-                <span className="text-[9px] uppercase tracking-[0.25em] text-[#E875A0]/60">
+                <span className="text-[12px] uppercase tracking-[0.25em] text-[#E875A0]/60">
                     Find The Change
                 </span>
                 </div>
@@ -529,7 +529,7 @@ export const NeuralBloom: React.FC = () => {
 
                 <div>
                     <div className="flex items-center justify-between mb-2 px-1">
-                    <div className="text-[10px] uppercase tracking-wider text-[#F8DCE8]/50">
+                    <div className="text-[13px] uppercase tracking-wider text-[#F8DCE8]/50">
                         Original
                     </div>
 
@@ -552,7 +552,7 @@ export const NeuralBloom: React.FC = () => {
 
                 <div>
                     <div className="flex items-center justify-between mb-2 px-1">
-                    <div className="text-[10px] uppercase tracking-wider text-[#E875A0]/70">
+                    <div className="text-[13px] uppercase tracking-wider text-[#E875A0]/70">
                         Mutated
                     </div>
 
@@ -609,7 +609,7 @@ export const NeuralBloom: React.FC = () => {
                     handleAnswer(option)
                     }
                     disabled={!!selectedAnswer}
-                    className={`px-3 py-3 rounded-lg border text-xs transition-all ${
+                    className={`px-3 py-3 rounded-lg border text-sm transition-all ${
                     isCorrect
                         ? 'border-[#E875A0] bg-[#E875A0]/10 text-white shadow-[0_0_15px_rgba(232,117,160,0.12)]'
                         : isSelected
@@ -628,7 +628,7 @@ export const NeuralBloom: React.FC = () => {
 
             {selectedAnswer && (
             <div
-                className={`mt-5 p-4 rounded-xl border text-xs leading-relaxed ${
+                className={`mt-5 p-4 rounded-xl border text-sm leading-relaxed ${
                 selectedAnswer === changedParameter
                     ? 'border-[#E875A0]/30 bg-[#E875A0]/5 text-[#F8DCE8]/80'
                     : 'border-white/10 bg-white/[0.02] text-[#F8DCE8]/60'
@@ -651,7 +651,7 @@ export const NeuralBloom: React.FC = () => {
             {/* Initial instruction */}
 
             {round === 0 && (
-            <div className="mt-5 p-4 rounded-xl border border-white/5 bg-white/[0.02] text-xs text-[#F8DCE8]/50 leading-relaxed">
+            <div className="mt-5 p-4 rounded-xl border border-white/5 bg-white/[0.02] text-sm text-[#F8DCE8]/50 leading-relaxed">
                 Start a challenge and compare the two
                 blooms carefully. The difference may be
                 subtle.

@@ -41,7 +41,7 @@ export const HobbyModal: React.FC<HobbyModalProps> = ({ hobby, onClose }) => {
         {/* Top Control Bar */}
         <div className="flex items-center justify-between pb-6 border-b border-[#F2A9C2]/15">
           <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-[#E875A0] font-medium">
-            <span>Outside the Code</span>
+            <span className="whitespace-nowrap">Outside the Code</span>
             <span aria-hidden="true">·</span>
             <span>{hobby.title}</span>
           </div>
@@ -106,16 +106,12 @@ export const HobbyModal: React.FC<HobbyModalProps> = ({ hobby, onClose }) => {
         </div>
 
         {/* Bottom Close Action */}
-        <div className="pt-6 border-t border-[#F2A9C2]/15 flex items-center justify-between">
-          <span className="text-xs text-[#F2A9C2]/60 font-light">
-            3 Photographs · {hobby.title}
-          </span>
-
+        <div className="pt-6 border-t border-[#F2A9C2]/15 flex items-center justify-end">
           <button
             onClick={onClose}
             className="px-5 py-2.5 rounded-lg text-xs tracking-[0.2em] uppercase font-medium text-white bg-[#651F3B] hover:bg-[#9D315C] transition-colors"
           >
-            Close ×
+            Close
           </button>
         </div>
       </div>
